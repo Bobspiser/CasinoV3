@@ -1,0 +1,130 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <section id="header">
+        <div class="header-heading" data-aos="fade-up">
+            <h1>Register now and get 100 $ for free</h1>
+            <h2>Golden Welcome</h2>
+            <a class="btn" href="#">Play Game</a>
+        </div>
+        </section>
+    </header>
+
+<section id="about">
+    <div class="about-img" data-aos="fade-up">
+        <img style="width: 70%" src="Images/About_image.jpg">
+    </div>
+    <div class="about-text" data-aos="fade-down">
+        <h1>About Us</h1>
+        <p>There is really a lot to choose from in our online casino. Whether you prefer the 'good old' slot machines or table games like poker blackjack, we have you covered. When it comes to slot machines, there is something for everyone. Perhaps you like slot games with themes from popular music or TV shows, and here you can find many titles that you will nod in recognition of. </p>
+        <h3>Live Casino</h3>
+        <p>In our live casino you play traditional table games such as Blackjack and Roulette with professional dealers. You can choose to participate at a table with other players or to play alone with the dealer. We have many tables for each game including Old Vegas, Golden Buffalo, Poker and Black jack tables. It is a unique experience to play in our Live Casino, and it is the closest you will get to playing in a physical Casino.</p>
+        <h3>Security</h3>
+        <p>Your security plays a central role in our online casino. The casino's specifically developed Gaming tool is unlike anything else you will experience in the industry, providing that crucial extra layer of safety, security and control. Set your own limits so you never end up playing for more than you can afford. Basically, it allows you to play by your own rules and your own limits. Our casino keeps an eye on the technical side of things in the background, so you can safely sit back, relax and enjoy the excitement.</p>
+        <a class="btn" href="#">Read more</a>
+    </div>
+</section>
+
+<section id="games">
+    <div class="game-heading">
+        <h1>New Games</h1>
+        <p>You will find all our new games here</p>
+    </div>
+    <div class="game-container">
+        <div class="game-box" data-aos="fade-up">
+            <div class="game-img">
+                <img src="Images/blackjack.jpg">
+            </div>
+            <div class="game-play">
+                <h4>Blackjack</h4>
+                <a class="btn" asp-page="blackjack">Play</a>
+            </div>
+        </div>
+
+        <div class="game-box" data-aos="fade-down">
+            <div class="game-img">
+                <img src="Images/game2.jpg">
+            </div>
+            <div class="game-play">
+                <h4>Roulette</h4>
+                <a class="btn" href="roulette.html">Play</a>
+            </div>
+        </div>
+
+        <div class="game-box" data-aos="fade-up">
+            <div class="game-img">
+                <img src="Images/game3.jpg">
+            </div>
+            <div class="game-play">
+                <h4>Golden Buffalo</h4>
+                <a class="btn" href="#">Play</a>
+            </div>
+        </div>
+
+        <div class="game-box" data-aos="fade-down">
+            <div class="game-img">
+                <img src="Images/game4.jpg">
+            </div>
+            <div class="game-play">
+                <h4>Gold Mine</h4>
+                    <a class="btn" asp-page="slots">Play</a>
+            </div>
+        </div>
+    </div>
+    <div class="game-container">
+        <div class="game-box" data-aos="fade-up">
+            <div class="game-img">
+                <img src="Images/poker.png">
+            </div>
+            <div class="game-play">
+                <h4>Poker</h4>
+                <a class="btn" href="#">Play</a>
+            </div>
+        </div>
+
+        <div class="game-box" data-aos="fade-down">
+            <div class="game-img">
+                <img src="Images/vegas.png">
+            </div>
+            <div class="game-play">
+                <h4>Old Vegas</h4>
+                <a class="btn" href="#">Play</a>
+            </div>
+        </div>
+
+        <div class="game-box" data-aos="fade-up">
+            <div class="game-img">
+                <img src="Images/slots.jpg">
+            </div>
+            <div class="game-play">
+                <h4>Triple Seven</h4>
+                <a class="btn" href="#">Play</a>
+            </div>
+        </div>
+
+        <div class="game-box" data-aos="fade-down">
+            <div class="game-img">
+                <img src="Images/rpg.jpg">
+            </div>
+            <div class="game-play">
+                <h4>Casino RPG</h4>
+                <a class="btn" href="Slots">Play</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+</body>

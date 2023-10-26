@@ -1,0 +1,232 @@
+﻿@page
+@model Casino.Pages.ProfilePageModel
+@{
+}
+
+<head>
+    <link href="~/css/Profile.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="profileone.css">
+</head>
+
+<div class="container">
+    <div class="profile-header">
+        <div class="profile-img">
+            <img id="profile-image1" src="~/Images/poker.png" height="200" alt="Profile Image">
+            <input id="profile-image-upload" class="hidden" type="file" onchange="previewFile()">
+            <div style="color:#999;">  </div>
+        </div>
+
+        <div class="profile-nav-info">
+            <h3 class="user-name">Nicklas Pedersen</h3>
+            <div class="address">
+                <p id="state" class="state">Roskilde,</p>
+                <span id="country" class="country">Denmark.</span>
+            </div>
+
+        </div>
+        <div class="profile-option">
+            <div class="notification">
+                <i class="fa fa-bell"></i>
+                <span class="alert-message">3</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bd">
+        <div class="left-side">
+            <div class="profile-side">
+                <p class="mobile-no">Choose Option:</p>
+                <div class="user-bio">
+                    <div class="profile-btn">
+                        <button type="submit" class="createbtn" id="Create-post">Withdrawal</button>
+                    </div>
+                    <div class="profile-btn">
+                        <button type="submit" class="createbtn" id="Create-post">Deposit</button>
+                    </div>
+                </div>
+                <form method="post">
+                    <div class="profile-btn">
+                        <button type="submit" class="createbtn" id="Create-post">Log Out</button>
+                    </div>
+                </form>
+
+                <div class="user-rating">
+                    <h3 class="rating">4.5</h3>
+                    <div class="rate">
+                        <div class="star-outer">
+                            <div class="star-inner">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="no-of-user-rate"><span>123</span>&nbsp;&nbsp;reviews</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="right-side">
+
+            
+
+            <div class="profile-body" style="display: block">
+                <div class="nav">
+                    <ul>
+                        <li onclick="tabs1()" class="user-post">Account Information</li>
+                        <li onclick="tabs2()" class="user-review">Security</li>
+                        <li onclick="tabs3()" class="user-setting">Transaction History</li>
+                        <li onclick="tabs4()" class="user-setting">Games Activity</li>
+                    </ul>
+                </div>
+
+                <div id="Information" class="LoggedInLayout__container">
+                    <div class="Card-root-0-2-259">
+                    <div class="PageTitle-root-0-2-204">
+                        <h1 class="PageTitle-title-0-2-216">Account information</h1>
+                    </div>
+
+                    <br />
+
+                        <div class="CardHeader-root-0-2-352">
+                            
+                            <div class="CardHeader-title-0-2-354">
+                                Private information
+                            </div>
+                        </div>
+
+                        <div class="privateInformationFields-0-2-471">
+
+                            <div class="labelContainer-0-2-473"><label>Email Address</label></div>
+                            <div class="infoText-0-2-482"><span class="infoTextFixedWidth-0-2-486">Secret@admin.com</span></div>
+
+                            <div class="labelContainer-0-2-473"><label>Name</label></div>
+                            <div class="infoText-0-2-482"><span class="infoTextFixedWidth-0-2-486">Nicklas Pedersen</span></div>
+
+                            <div class="labelContainer-0-2-473"><label>Gender</label></div>
+                            <div class="infoText-0-2-482"><span class="infoTextFixedWidth-0-2-486">Male</span></div>
+
+                            <div class="labelContainer-0-2-473"><label>Preferred language</label></div>
+                            <div class="infoText-0-2-482"><span class="infoTextFixedWidth-0-2-486">Danish</span></div>
+
+                            <div class="labelContainer-0-2-473"><label>Country/Region</label></div>
+                            <div class="infoText-0-2-482"><span class="infoTextFixedWidth-0-2-486">Denmark</span></div>
+
+                            <div class="labelContainer-0-2-473"><label>Date of birth</label></div>
+                            <div class="infoText-0-2-482"><span class="infoTextFixedWidth-0-2-486">21 June 2000</span></div>
+
+                            <div class="labelContainer-0-2-473"><label>Phone number</label></div>
+                            <div class="infoText-0-2-482"><span class="infoTextFixedWidth-0-2-486">** ** ** 47</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Security" class="LoggedInLayout__container" style="display: none">
+                    <div class="Card-root-0-2-259">
+                        <div class="PageTitle-root-0-2-204">
+                            <h1 class="PageTitle-title-0-2-216">Security</h1>
+                        </div>
+
+                        <br />
+
+                        <div class="CardHeader-root-0-2-352">
+                            <div class="CardHeader-title-0-2-354">
+                                Password
+                            </div>
+                        </div>
+
+                        <div class="privateInformationFields-0-2-471">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam pariatur officia, aperiam quidem quasi, tenetur molestiae. Architecto mollitia laborum possimus iste esse. Perferendis tempora consectetur, quae qui nihil voluptas. Maiores debitis
+                                repellendus excepturi quisquam temporibus quam nobis voluptatem, reiciendis distinctio deserunt vitae! Maxime provident, distinctio animi commodi nemo, eveniet fugit porro quos nesciunt quidem a, corporis nisi dolorum minus sit eaque error
+                                sequi ullam. Quidem ut fugiat, praesentium velit aliquam!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Card-root-0-2-259">
+                        <div class="CardHeader-root-0-2-352">
+                            <div class="CardHeader-title-0-2-354">
+                                2-Step Verification
+                            </div>
+                        </div>
+
+                        <div class="privateInformationFields-0-2-471">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam pariatur officia, aperiam quidem quasi, tenetur molestiae. Architecto mollitia laborum possimus iste esse. Perferendis tempora consectetur, quae qui nihil voluptas. Maiores debitis
+                                repellendus excepturi quisquam temporibus quam nobis voluptatem, reiciendis distinctio deserunt vitae! Maxime provident, distinctio animi commodi nemo, eveniet fugit porro quos nesciunt quidem a, corporis nisi dolorum minus sit eaque error
+                                sequi ullam. Quidem ut fugiat, praesentium velit aliquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="History" class="LoggedInLayout__container" style="display: none">
+                    <div class="Card-root-0-2-259">
+                        <div class="PageTitle-root-0-2-204">
+                            <h1 class="PageTitle-title-0-2-216">Transaction History</h1>
+                        </div>
+
+                        <br />
+
+                        <div class="privateInformationFields-0-2-471">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit omnis eaque, expedita nostrum, facere libero provident laudantium. Quis, hic doloribus! Laboriosam nemo tempora praesentium. Culpa quo velit omnis, debitis maxime, sequi
+                                animi dolores commodi odio placeat, magnam, cupiditate facilis impedit veniam? Soluta aliquam excepturi illum natus adipisci ipsum quo, voluptatem, nemo, commodi, molestiae doloribus magni et. Cum, saepe enim quam voluptatum vel debitis
+                                nihil, recusandae, omnis officiis tenetur, ullam rerum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Activity" class="LoggedInLayout__container" style="display: none">
+                    <div class="Card-root-0-2-259">
+                        <div class="PageTitle-root-0-2-204">
+                            <h1 class="PageTitle-title-0-2-216">Games Activity</h1>
+                        </div>
+
+                        <br />
+
+                        <div class="CardHeader-root-0-2-352">
+                            <div class="CardHeader-title-0-2-354">
+                                Total time played
+                            </div>
+                        </div>
+
+                        <div class="privateInformationFields-0-2-471">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit omnis eaque, expedita nostrum, facere libero provident laudantium. Quis, hic doloribus! Laboriosam nemo tempora praesentium. Culpa quo velit omnis, debitis maxime, sequi
+                                animi dolores commodi odio placeat, magnam, cupiditate facilis impedit veniam? Soluta aliquam excepturi illum natus adipisci ipsum quo, voluptatem, nemo, commodi, molestiae doloribus magni et. Cum, saepe enim quam voluptatum vel debitis
+                                nihil, recusandae, omnis officiis tenetur, ullam rerum.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Card-root-0-2-259">
+                        <div class="CardHeader-root-0-2-352">
+                            <div class="CardHeader-title-0-2-354">
+                                Games activity
+                            </div>
+                        </div>
+
+                        <div class="privateInformationFields-0-2-471">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam pariatur officia, aperiam quidem quasi, tenetur molestiae. Architecto mollitia laborum possimus iste esse. Perferendis tempora consectetur, quae qui nihil voluptas. Maiores debitis
+                                repellendus excepturi quisquam temporibus quam nobis voluptatem, reiciendis distinctio deserunt vitae! Maxime provident, distinctio animi commodi nemo, eveniet fugit porro quos nesciunt quidem a, corporis nisi dolorum minus sit eaque error
+                                sequi ullam. Quidem ut fugiat, praesentium velit aliquam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/js/Profile.js" asp-append-version="true"></script>

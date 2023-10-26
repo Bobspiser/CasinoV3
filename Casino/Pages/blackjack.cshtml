@@ -1,0 +1,38 @@
+﻿@page
+@model Casino.Pages.blackjackModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/Blackjack.css" asp-append-version="true" />
+</head>
+
+<body>
+    <section id="header">
+
+        <div class="header-heading">
+            <h1>Welcome To Blackjack</h1>
+
+            <input class="btn" type="button" value="Reload Page" onClick="document.location.reload(true)">
+            
+        </div>
+        <div class="bj">
+            <h2 style="color: white">Dealer: <span id="dealer-sum" style="color: white"></span></h2>
+            <div id="dealer-cards">
+                <img id="hidden" src="./Images/cards/BACK.png">
+                <div style="position: absolute" id="visible"></div>
+            </div>
+
+            <h2 style="color: white">You: <span id="your-sum" style="color: white"></span></h2>
+            <div id="your-cards"></div>
+
+            <br>
+            <button id="hit">Hit</button>
+            <button id="stay">Stay</button>
+            <p id="results"></p>
+
+        </div>
+    </section>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>

@@ -1,0 +1,55 @@
+﻿@page
+@model Casino.Pages.ContactModel
+@{
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/contact.css">
+</head>
+
+<section id="contact">
+    <div class="contact-img">
+        <img style="width: 80%" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+             class="img-fluid" alt="Phone image">
+    </div>
+    <div class="contact-text" data-aos="fade-down">
+        
+        <h1>How can we help?</h1>
+        <label class="form-label">Subject:</label>
+        <br />
+        <input style="width: 70%" />
+
+        <br />
+        <br />
+
+        <select class="subject">
+            <option value="general">General</option>
+            <option value="payment">Payment</option>
+            <option value="Account">My Account</option>
+            <option value="slots">Slots machine</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label class="form-label">Reason:</label>
+        <br />
+        <textarea placeholder="Write something..."></textarea>
+
+        <br />
+
+        <button class="btn">Send</button>
+    </div>
+</section>
+
+<style>
+    .subject {
+        background-color: white;
+        width: 200px;
+        padding: 12px 20px;
+        font-size: 18px;
+        border: none;
+        border-color: black;
+    }
+
+</style>

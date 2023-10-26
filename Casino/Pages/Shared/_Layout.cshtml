@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Casino</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="Index" class="logo">
+                <img id="logo" src="Images/casino-design-logo.png" alt="logo">
+            </a>
+            <ul class="menu">
+                <li><a class="active" href="Index">Home</a></li>
+                <li><a href="daily">Daily</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="Contact">Contact</a></li>
+                @if (Casino.Services.login.loggedOn == false)
+                {
+                    <li><a href="Login">Log in</a></li>
+                }
+                
+                @if (Casino.Services.login.loggedOn == true)
+                {
+                    <li><a href="ProfilePage" class="money">@*@Html.DisplayFor(models => models.Player.Money)*@ $</a></li>
+                }
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

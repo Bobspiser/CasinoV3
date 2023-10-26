@@ -1,0 +1,109 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kiwi Maru', serif;
+    box-sizing: border-box;
+}
+
+#header {
+    width: 100%;
+    height: 970px;
+    background: #333;
+    position: relative;
+}
+
+.header-heading {
+    width: 500px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%, -50%);
+    color: #fff;
+}
+
+    .header-heading h1 {
+        font-size: 70px;
+        margin: 0px;
+        letter-spacing: 5px;
+        font-weight: 500;
+        color: #e9c966;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+.money {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9c966;
+    box-shadow: 5px 10px 30px rgba(255,217,0,0.4);
+    border-radius: 10px;
+    color: #000;
+    margin-top: 25px;
+    font-weight: 500;
+    transition: 0.6s ease-out;
+    font-size: 14px;
+}
+
+    .btn:hover {
+        background-color: #fdbe00;
+    }
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+.bj {
+    position: absolute;
+    margin-top: 8%;
+    margin-right: 10%;
+    margin-left: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#hit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#stay {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF0000;
+    border-radius: 10px;
+    color: #000;
+    margin-top: 25px;
+    font-weight: 500;
+    transition: 0.6s ease-out;
+    font-size: 14px;
+}
+
+    .btn:hover {
+        background-color: #C21807;
+    }
