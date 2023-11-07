@@ -5,17 +5,18 @@
 
 <head>
     <link href="~/css/Profile.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="profileone.css">
 </head>
 
 <div class="container">
     <div class="profile-header">
         <div class="profile-img">
-            <img id="profile-image1" src="~/Images/poker.png" height="200" alt="Profile Image">
-            <input id="profile-image-upload" class="hidden" type="file" onchange="previewFile()">
-            <div style="color:#999;">  </div>
+                <img id="profile-image1" src="~/Images/poker.png" height="200" alt="Profile Image">
+            <input id="profile-image-upload" type="file" onchange="previewFile()">
+            
+            <div style="color:#999;">
+                </div>
         </div>
+        
 
         <div class="profile-nav-info">
             <h3 class="user-name">Nicklas Pedersen</h3>
@@ -50,23 +51,6 @@
                         <button type="submit" class="createbtn" id="Create-post">Log Out</button>
                     </div>
                 </form>
-
-                <div class="user-rating">
-                    <h3 class="rating">4.5</h3>
-                    <div class="rate">
-                        <div class="star-outer">
-                            <div class="star-inner">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                        <span class="no-of-user-rate"><span>123</span>&nbsp;&nbsp;reviews</span>
-                    </div>
-
-                </div>
             </div>
 
         </div>

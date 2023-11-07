@@ -36,34 +36,11 @@ body {
         width: 230px;
         border: 5px solid #fff;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-        position: absolute;
-        left: 50px;
         top: 20px;
-        z-index: 5;
+        margin-left: 50px;
         background: #fff;
         cursor: pointer;
     }
-
-    .profile-img:hover {
-    }
-
-    .profile-img .file {
-        position: relative;
-        overflow: hidden;
-        margin-top: 50%;
-        width: 70%;
-        border: none;
-        border-radius: 0;
-        font-size: 15px;
-        background: #212529b8;
-    }
-
-        .profile-img .file input {
-            position: absolute;
-            opacity: 0;
-            right: 0;
-            top: 0;
-        }
 
 .profile-nav-info {
     float: left;
@@ -208,38 +185,12 @@ button.createbtn {
         margin-right: 5px;
     }
 
-.user-rating {
-    display: flex;
-}
-
-    .user-rating h3 {
-        font-size: 2.5rem;
-        font-weight: 200;
-        margin-right: 5px;
-        letter-spacing: 1px;
-        color: #666;
-    }
-
-    .user-rating .no-of-user-rate {
-        font-size: 0.9rem;
-    }
-
-.rate {
-    padding-top: 6px;
-}
-
-    .rate i {
-        font-size: 0.9rem;
-        color: rgba(228, 0, 70, 1);
-    }
-
 .nav {
     width: 100%;
 }
 
     .nav ul {
         display: flex;
-        justify-content: space-around;
         list-style-type: none;
         height: 50px;
         background: #fff;
@@ -387,7 +338,6 @@ button.createbtn {
 
 .right-side {
     width: 100%;
-    background-color: #888;
 }
 
 .LoggedInLayout__container {
@@ -396,6 +346,7 @@ button.createbtn {
     flex-direction: column;
     flex-grow: 1;
     margin-bottom: 0;
+    margin-top: -20px;
     position: relative;
     -webkit-transform: translateX(0);
     transform: translateX(0);
