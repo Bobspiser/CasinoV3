@@ -30,7 +30,7 @@
             <div class="form-content">
                 <div class="login-form">
                     <div class="title">Login</div>
-                    <form method="post">
+                    <form method="post" asp-page-handler="Login">
                         <div class="input-boxes">
                             <div class="input-box">
                                 <i class="fas fa-envelope"></i>
@@ -51,19 +51,19 @@
                 </div>
                 <div class="signup-form">
                     <div class="title">Signup</div>
-                    <form method="postRegister">
+                    <form method="post" asp-page-handler="Register">
                         <div class="input-boxes">
                             <div class="input-box">
-                                <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Enter your name" required>
+                                <input asp-for="player.Name" type="text" placeholder="Enter your name" required>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-envelope"></i>
-                                <input type="text" placeholder="Enter your email" required>
+                                <input asp-for="player.Email" type="text" placeholder="Enter your email" required>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Enter your password" required>
+                                <input asp-for="player.Age" type="date" placeholder="Enter your birthday" required>
+                            </div>
+                            <div class="input-box">
+                                <input asp-for="player.Password" type="password" placeholder="Enter your password" required>
                             </div>
                             <div class="button input-box">
                                 <input type="submit" value="Submit">

@@ -4,12 +4,15 @@ using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.SqlClient;
 using Casino.Services;
+using Casino.models;
 
 namespace Casino.Pages
 {
     public class LoginModel : PageModel
     {
         private Ilogin _service;
+
+        public Player player { get; set; }
 
         public LoginModel()
         {
@@ -33,7 +36,7 @@ namespace Casino.Pages
 
         string query = "SELECT * from tbl_login WHERE Username = @username and password=@password";
 
-        public IActionResult OnPost()
+        public IActionResult OnPostLogin()
         {
             _service = SessionHelper.GetUser(HttpContext);
 
@@ -58,7 +61,15 @@ namespace Casino.Pages
 
         public IActionResult OnPostRegister()
         {
-
+            if(player.Password.Length <= 6)
+            {
+                throw new ArgumentOutOfRangeException("Password skal være mere end 6 tegn");
+            } 
+            else
+            {
+                _service.SetUserLoggedIn(Name, false, true);
+                
+            }
             return RedirectToPage("/Index");
         }
 
